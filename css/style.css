@@ -1,0 +1,174 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #D3CAAB;
+}
+
+/* Global */
+.container, .content {
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+    display: flex;
+}
+  
+/* Header */
+header ul{  
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #404D49;
+}
+
+header p {
+    color: #404D49;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#branding {
+    display: flex;
+    align-items: center;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 16px;
+}
+
+#logo{
+    width: 50px;;
+}
+
+#getstated-button {
+    background: #2D5EBD;
+    font-weight: bold;
+    height: 38px;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+
+
+header .current {
+    color: #071112;
+    font-weight: bold;
+}
+
+/* Content */ 
+
+
+#content-header{
+    font-size: 40px;
+    color: #071112;
+}
+
+#content-text{
+    color: #19282B;
+}
+
+#learn-button {
+    background: #ffffff;
+    font-weight: bold;
+    height: 38px;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #2D5EBD;
+    margin-left: 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.content {
+    display: flex;  
+    margin-top: 30px;
+}
+
+#container{
+    width: 60%;
+}
+
+/* Items */
+.item {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: #E9E3D1;
+    text-align: center;
+    width: 200px;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+/* Runes */
+
+#principal, #secondary {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: #E9E3D1;
+    padding: 10px;
+    margin:10px;
+}
+
+#principal{
+    width: 600px;
+}
+
+#secondary{
+    width: 400px;
+}
+
+
+.rune-item{
+    width: 90px;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    .container, .content, #branding {
+      justify-content: center;
+      text-align:center;
+      width:100%;
+      flex-wrap: wrap;
+    }
+
+    #principal, #secondary {
+        flex-direction: column;
+        width:100%;
+        text-align:center;
+    }
+}
